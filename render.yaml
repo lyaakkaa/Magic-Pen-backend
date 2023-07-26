@@ -3,7 +3,7 @@ services:
     name: fastapi
     runtime: docker
     plan: free
-    repo: https://github.com/lyakusik/hp-generator-backend
+    repo: https://github.com/lyakusik/Magic-Pen-backend.git
     region: frankfurt
     branch: main
     envVars:
