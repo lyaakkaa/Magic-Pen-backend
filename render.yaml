@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: fastapi
+    runtime: docker
+    plan: free
+    repo: https://github.com/lyakusik/hp-generator-backend
+    region: frankfurt
+    branch: main
+    envVars:
+      - key: MONGO_URL
+        sync: false
+    buildFilter:
+      paths:
+      - app/**
+  
